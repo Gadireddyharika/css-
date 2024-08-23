@@ -1,27 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: hwb(269 52% 14%);
+        }
+        .container {
+            margin: 5% 5%;
+            width: 90%;
+            height: 75vh;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px;
+            grid-template-areas: 
+            "mansonry1 responsive overlap overlap"
+            "mansonry1 fiuid explicity neg-space"
+            "flexible masonry2 explicity masonry3"
+            "domorder masonry2 tracks tracks";
+        
+        }
+        .container div {
+            background-color: whitesmoke;
+            text-align: center;
+            align-content: center;
+        }
+        .item1 {
+            grid-area: mansonry1;
 
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Document</title>
-            <style>
-                .container {
-                    display: grid;
-                    padding: 10px;
-                    grid-template-columns: auto auto auto;
-                    grid-template-areas: 
-                    "header header header"
-                    "sidebar content-1 content-1"
-                    "sidebar content-2 contet-3"
-                    "footer footer footer";
-                    
-
-                    
-                }
-            </style>
-        </head>
-        <body>
+        }
+        .item2 {
+            grid-area: responsive;
+ 
+        }
+        .item3 {
+            grid-area: overlap;
+        }
+        .item4 {
+            grid-area: fiuid;
+        }
+        .item5 {
+            grid-area: explicity;
+        }
+        .item6 {
+            grid-area: neg-space;
+        }
+        .item7 {
+            grid-area: flexible;
+        }
+        .item8 {
+            grid-area: masonry2;
+        }
+        .item9 {
+            grid-area: masonry3;
+        }
+        .item10 {
+            grid-area: domorder;
+        }
+        .item11 {
+            grid-area: tracks;
+        }
+        @media only screen and (width<800px) {
+            body {
+                background-color: burlywood;
+            }
             
-        </body>
-        </html>
+        }
+        @media only screen and  (width<600px) {
+            body {
+                background-color: black;
+            }
+            .container {
+                grid-template-columns: auto;
+                grid-template-areas:
+                "masonry1"
+                "responsive"
+                "overlap"
+                "fluid"
+                "explicity"
+                "neg space"
+                "flexible"
+                "masonry2"
+                "masonry3"
+                "domorder"
+                "tracks";
+                
+            }
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Masonry 1</div>
+        <div class="item2">Responsive</div>
+        <div class="item3">Overlap</div>
+        <div class="item4">Fluid</div>
+        <div class="item5">Explicity placed</div>
+        <div class="item6">Negative space</div>
+        <div class="item7">Flexible Breadth</div>
+        <div class="item8">Masonry 11</div>
+        <div class="item9">Masonry 111</div>
+        <div class="item10">Dom Order</div>
+        <div class="item11">Named Tracks</div>
+       
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY FOOD</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 2% auto;
+        }
+
+        .container div {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        .container img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .container h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center><h1>MY FOOD</h1></center><br><br>
+    <div class="container">
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="Sandwich">
+            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/steak.jpg" alt="Steak">
+            <h2>Let Me Tell You About This Steak</h2>
+            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="Cherries">
+            <h2>Cherries Interrupted</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/wine.jpg" alt="Wine & Pasta">
+            <h2>Once Again, Robust Wine & Vegetable Pasta</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="Popsicle">
+            <h2>All I Need Is a Popsicle</h2>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="Salmon">
+            <h2>Salmon For Your Skin</h2>
+            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="Sandwich">
+            <h2>The Perfect Sandwich, A Real Classic</h2>
+            <p>Just some random text, ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.w3schools.com/w3images/croissant.jpg" alt="Croissant">
+            <h2>Le French</h2>
+            <p>Lorem lorem lorem lorem ipsum praesent tincidunt ipsum lipsum.</p>
+        </div>
+    </div>
+</body>
+</html>
